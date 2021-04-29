@@ -11,10 +11,8 @@ const ProjectsHero = () => {
           <Typography variant="h1">Projects</Typography>
           <Box mt={4}>
             <Typography variant="h2">
-              Some of my open source side projects.
-            </Typography>
-            <Typography variant="h2">
-              All repositories are available on my{' '}
+              Some of my open source side projects. All repositories are
+              available on my{' '}
               <a
                 href="https://github.com/adrianapan"
                 target="_blank"

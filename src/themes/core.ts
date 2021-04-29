@@ -6,7 +6,7 @@ const coreTheme = {
       fontWeight: 900,
     },
     h2: {
-      fontSize: 32,
+      fontSize: '2.35rem',
       fontWeight: 400,
     },
     h3: {
