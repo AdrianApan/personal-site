@@ -53,6 +53,10 @@ const HomeHero = () => {
                   icon={<LinkedinIcon />}
                 />
               </ListItem>
+            </List>
+          </Grid>
+          <Grid item xs={12} md={6}>
+            <List className={classes.list}>
               <ListItem>
                 <SocialLink
                   label="github.com/adrianapan"
@@ -68,9 +72,6 @@ const HomeHero = () => {
                 />
               </ListItem>
             </List>
-          </Grid>
-          <Grid item xs={12} md={6}>
-            RIGHT
           </Grid>
         </Grid>
       </Box>

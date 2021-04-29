@@ -7,6 +7,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 18,
     fontWeight: 700,
     color: 'inherit',
+    alignItems: 'center',
 
     '& > svg': {
       marginRight: theme.spacing(1),
