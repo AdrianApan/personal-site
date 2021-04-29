@@ -28,6 +28,11 @@ const coreTheme = {
         paddingBottom: 16,
       },
     },
+    MuiIconButton: {
+      root: {
+        color: 'inherit',
+      },
+    },
     MuiButton: {
       root: {
         color: '#3BA1BB',

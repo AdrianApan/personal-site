@@ -4,6 +4,10 @@ const useStyles = makeStyles((theme) => ({
   menu: {
     display: 'flex',
     marginRight: theme.spacing(2),
+
+    [theme.breakpoints.down('xs')]: {
+      marginRight: 0,
+    },
   },
   button: {
     color: 'inherit',
@@ -21,6 +25,10 @@ const useStyles = makeStyles((theme) => ({
 
     '&:after': {
       display: 'none',
+    },
+
+    [theme.breakpoints.down('xs')]: {
+      width: '100%',
     },
   },
   active: {
