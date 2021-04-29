@@ -1,15 +1,6 @@
-import { Grid, Typography, Box, makeStyles } from '@material-ui/core'
+import { Grid, Typography, Box } from '@material-ui/core'
 
-const useStyles = makeStyles((theme) => ({
-  link: {
-    fontWeight: 700,
-    color: 'inherit',
-
-    '&:visited, &:focus': {
-      color: 'inherit',
-    },
-  },
-}))
+import useStyles from './ProjectsHero.styles'
 
 const ProjectsHero = () => {
   const classes = useStyles()

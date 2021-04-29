@@ -1,11 +1,4 @@
-import {
-  Grid,
-  Typography,
-  Box,
-  List,
-  ListItem,
-  makeStyles,
-} from '@material-ui/core'
+import { Grid, Typography, Box, List, ListItem } from '@material-ui/core'
 
 import HeartIcon from '../../icons/Heart'
 import JavascriptIcon from '../../icons/Javascript'
@@ -18,25 +11,8 @@ import LinkedinIcon from '../../icons/Linkedin'
 import GithubIcon from '../../icons/Github'
 import TwitterIcon from '../../icons/Twitter'
 
+import useStyles from './HomeHero.styles'
 import SocialLink from '../SocialLink'
-
-const useStyles = makeStyles((theme) => ({
-  copy: {
-    '& > svg': {
-      margin: theme.spacing(0, 0.5),
-    },
-  },
-  list: {
-    width: 'fit-content',
-    padding: 0,
-
-    '& > li': {
-      '& > svg': {
-        marginRight: theme.spacing(1),
-      },
-    },
-  },
-}))
 
 const HomeHero = () => {
   const classes = useStyles()
