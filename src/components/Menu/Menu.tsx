@@ -43,7 +43,7 @@ const Menu = () => {
           </ActiveLink>
         ))}
       </Hidden>
-      <Hidden mdUp>
+      <Hidden smUp>
         <IconButton
           aria-label="more"
           aria-controls="long-menu"
