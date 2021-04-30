@@ -17,6 +17,15 @@ const useStyles = makeStyles((theme) => ({
     alignItems: ({ rowFlex }: Partial<StyleProps>) =>
       rowFlex ? 'center' : 'inherit',
   },
+  grid: {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(auto-fit, minmax(432px, 1fr))',
+    gridGap: theme.spacing(2),
+
+    [theme.breakpoints.down('xs')]: {
+      gridTemplateColumns: 'inherit',
+    },
+  },
 }))
 
 export default useStyles

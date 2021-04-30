@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import useSWR from 'swr'
-import { Box, Grid } from '@material-ui/core'
+import { Box } from '@material-ui/core'
 
 import ProjectData from '../types/Project'
 
@@ -38,32 +38,18 @@ const Home = () => {
           />
 
           {!data && (
-            <Grid container spacing={2}>
-              <Grid item xs={12} md={6}>
-                {[...Array(2)].map((_, i) => (
-                  <ProjectCardSkeleton key={i} compact />
-                ))}
-              </Grid>
-              <Grid item xs={12} md={6}>
-                {[...Array(2)].map((_, i) => (
-                  <ProjectCardSkeleton key={i} compact />
-                ))}
-              </Grid>
-            </Grid>
+            <Box className={classes.grid}>
+              {[...Array(4)].map((_, i) => (
+                <ProjectCardSkeleton key={i} compact />
+              ))}
+            </Box>
           )}
 
-          <Grid container spacing={2}>
-            <Grid item xs={12} md={6}>
-              {data?.slice(0, 2).map((project: ProjectData) => (
-                <ProjectCard key={project.title} data={project} compact />
-              ))}
-            </Grid>
-            <Grid item xs={12} md={6}>
-              {data?.slice(2, 4).map((project: ProjectData) => (
-                <ProjectCard key={project.title} data={project} compact />
-              ))}
-            </Grid>
-          </Grid>
+          <Box className={classes.grid}>
+            {data?.slice(0, 4).map((project: ProjectData) => (
+              <ProjectCard key={project.title} data={project} compact />
+            ))}
+          </Box>
         </Box>
 
         <Box mt={3} mb={3}>

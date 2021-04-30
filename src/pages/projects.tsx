@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import useSWR from 'swr'
-import { Box, Grid } from '@material-ui/core'
+import { Box } from '@material-ui/core'
 
 import ProjectData from '../types/Project'
 
@@ -32,36 +32,18 @@ const Projects = () => {
       <Box className={classes.inner}>
         <Box mt={4} mb={4}>
           {!data && (
-            <Grid container spacing={2}>
-              <Grid item xs={12} md={6}>
-                {[...Array(data?.length)].slice(0, halfData).map((_, i) => (
-                  <ProjectCardSkeleton key={i} />
-                ))}
-              </Grid>
-              <Grid item xs={12} md={6}>
-                {[...Array(data?.length)]
-                  .slice(halfData, data?.length)
-                  .map((_, i) => (
-                    <ProjectCardSkeleton key={i} />
-                  ))}
-              </Grid>
-            </Grid>
+            <Box className={classes.grid}>
+              {[...Array(data?.length)].map((_, i) => (
+                <ProjectCardSkeleton key={i} />
+              ))}
+            </Box>
           )}
 
-          <Grid container spacing={2}>
-            <Grid item xs={12} md={6}>
-              {data?.slice(0, halfData).map((project: ProjectData) => (
-                <ProjectCard key={project.title} data={project} />
-              ))}
-            </Grid>
-            <Grid item xs={12} md={6}>
-              {data
-                ?.slice(halfData, data?.length)
-                .map((project: ProjectData) => (
-                  <ProjectCard key={project.title} data={project} />
-                ))}
-            </Grid>
-          </Grid>
+          <Box className={classes.grid}>
+            {data?.map((project: ProjectData) => (
+              <ProjectCard key={project.title} data={project} />
+            ))}
+          </Box>
         </Box>
       </Box>
     </>

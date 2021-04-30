@@ -13,20 +13,20 @@ export default (req: NextApiRequest, res: NextApiResponse<ProjectData[]>) => {
       repository: 'https://github.com/AdrianApan/yamde',
     },
     {
-      title: 'Highlighter prototype',
-      description:
-        'Interactive document/text highlighter proof of concept build with React.',
-      image: 'highlighter_prototype.png',
-      link: 'https://adrianapan.github.io/highlighter-prototype/',
-      repository: 'https://github.com/AdrianApan/highlighter-prototype',
-    },
-    {
       title: 'NPM dependency graph',
       description:
         'Node module dependency graph search and visualiser build with React.',
       image: 'npm_deps_graph.png',
       link: 'https://adrianapan.github.io/npm-dependency-graph/',
       repository: 'https://github.com/AdrianApan/npm-dependency-graph',
+    },
+    {
+      title: 'Highlighter prototype',
+      description:
+        'Interactive document/text highlighter proof of concept build with React.',
+      image: 'highlighter_prototype.png',
+      link: 'https://adrianapan.github.io/highlighter-prototype/',
+      repository: 'https://github.com/AdrianApan/highlighter-prototype',
     },
     {
       title: 'Mars weather insight',

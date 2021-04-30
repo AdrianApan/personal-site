@@ -18,6 +18,10 @@ const useStyles = makeStyles((theme) => ({
   },
   thumbnail: {
     maxWidth: '50px',
+
+    [theme.breakpoints.down('xs')]: {
+      maxWidth: '40px',
+    },
   },
   links: {
     display: 'flex',
