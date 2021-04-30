@@ -13,6 +13,11 @@ const coreTheme = {
       fontSize: 24,
       fontWeight: 700,
     },
+    h4: {
+      fontSize: 20,
+      fontWeight: 700,
+      color: '#3BA1BB',
+    },
   },
   props: {
     MuiButton: { disableRipple: true },
@@ -37,7 +42,8 @@ const coreTheme = {
       root: {
         color: '#3BA1BB',
         transition: 'color .2s ease',
-        // textTransform: 'none', // https://github.com/mui-org/material-ui/issues/19655
+        fontWeight: 700,
+        fontSize: 16,
 
         '&:hover': {
           backgroundColor: 'transparent',

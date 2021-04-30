@@ -7,6 +7,7 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     position: 'fixed',
     minHeight: 75,
+    zIndex: 2,
   },
   content: {
     paddingTop: 75,
