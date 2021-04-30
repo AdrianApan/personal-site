@@ -1,5 +1,5 @@
+import { useContext } from 'react'
 import { Box } from '@material-ui/core'
-import useDarkMode from 'use-dark-mode'
 
 import useStyles from '../../styles/main'
 import LogoDark from '../../icons/LogoDark'
@@ -7,11 +7,11 @@ import LogoLight from '../../icons/LogoLight'
 import Menu from '../../components/Menu'
 import ThemeToggler from '../../components/ThemeToggler'
 
+import { ToggleThemeContext } from '../../context/ThemeProvider'
+
 const Header = () => {
   const classes = useStyles({ rowFlex: true })
-  // @todo
-  // - fix: logo reverting to dark on refresh
-  const { value: isDark, toggle: toggleDarkMode } = useDarkMode()
+  const { toggleTheme, isDark } = useContext(ToggleThemeContext)
 
   return (
     <Box className={classes.inner}>
@@ -24,7 +24,7 @@ const Header = () => {
         style={{ marginLeft: 'auto', display: 'flex', alignItems: 'center' }}
       >
         <Menu />
-        <ThemeToggler toggleDarkMode={toggleDarkMode} isDark={isDark} />
+        <ThemeToggler toggleTheme={toggleTheme} isDark={isDark} />
       </Box>
     </Box>
   )
