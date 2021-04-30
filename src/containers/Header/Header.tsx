@@ -1,4 +1,4 @@
-import { Box, Switch } from '@material-ui/core'
+import { Box } from '@material-ui/core'
 import useDarkMode from 'use-dark-mode'
 
 import useStyles from '../../styles/main'
