@@ -47,44 +47,36 @@ const HomeHero = () => {
       </Grid>
 
       <Box mt={6}>
-        <Grid container>
-          <Grid item xs={12} md={6}>
-            <List className={classes.list}>
-              <ListItem>
-                <SocialLink
-                  label="mail@adrianapan.com"
-                  link="mailto:mail@adrianapan.com"
-                  icon={<EmailIcon />}
-                />
-              </ListItem>
-              <ListItem>
-                <SocialLink
-                  label="linkedin.com/in/adrianapan"
-                  link="https://linkedin.com/in/adrianapan"
-                  icon={<LinkedinIcon />}
-                />
-              </ListItem>
-            </List>
-          </Grid>
-          <Grid item xs={12} md={6}>
-            <List className={classes.list}>
-              <ListItem>
-                <SocialLink
-                  label="github.com/adrianapan"
-                  link="https://github.com/adrianapan"
-                  icon={<GithubIcon />}
-                />
-              </ListItem>
-              <ListItem>
-                <SocialLink
-                  label="@adrianapan"
-                  link="https://twitter.com/adrianapan"
-                  icon={<TwitterIcon />}
-                />
-              </ListItem>
-            </List>
-          </Grid>
-        </Grid>
+        <List className={classes.list}>
+          <ListItem>
+            <SocialLink
+              label="mail@adrianapan.com"
+              link="mailto:mail@adrianapan.com"
+              icon={<EmailIcon />}
+            />
+          </ListItem>
+          <ListItem>
+            <SocialLink
+              label="linkedin.com/in/adrianapan"
+              link="https://linkedin.com/in/adrianapan"
+              icon={<LinkedinIcon />}
+            />
+          </ListItem>
+          <ListItem>
+            <SocialLink
+              label="github.com/adrianapan"
+              link="https://github.com/adrianapan"
+              icon={<GithubIcon />}
+            />
+          </ListItem>
+          <ListItem>
+            <SocialLink
+              label="@adrianapan"
+              link="https://twitter.com/adrianapan"
+              icon={<TwitterIcon />}
+            />
+          </ListItem>
+        </List>
       </Box>
     </>
   )

@@ -6,7 +6,6 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     alignItems: 'center',
     alignContent: 'center',
-    marginBottom: theme.spacing(3),
     padding: theme.spacing(1, 0),
   },
   title: {

@@ -4,13 +4,14 @@ const useStyles = makeStyles((theme) => ({
   link: {
     display: 'flex',
     textDecoration: 'none',
-    fontSize: 18,
+    fontSize: 14,
     fontWeight: 700,
     color: 'inherit',
     alignItems: 'center',
 
     '& > svg': {
-      marginRight: theme.spacing(1),
+      marginRight: theme.spacing(0.5),
+      fontSize: 20,
     },
 
     '&:hover': {

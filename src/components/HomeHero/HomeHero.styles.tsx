@@ -7,10 +7,23 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   list: {
-    width: 'fit-content',
-    padding: 0,
+    display: 'flex',
+    flexDirection: 'row',
+    gridGap: theme.spacing(4),
+
+    [theme.breakpoints.down('xs')]: {
+      gridGap: theme.spacing(0),
+      flexDirection: 'column',
+    },
 
     '& > li': {
+      width: 'fit-content',
+      paddingBottom: 0,
+
+      [theme.breakpoints.down('xs')]: {
+        paddingBottom: theme.spacing(2.5),
+      },
+
       '& > svg': {
         marginRight: theme.spacing(1),
       },
