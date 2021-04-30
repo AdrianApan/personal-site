@@ -8,7 +8,7 @@ const themeColors = {
   heroBackground: '#191919',
   textColorPrimary: '#FFFFFF',
   textColorSecondary: '#F1F1F1',
-  divider: '#DFDFDF',
+  divider: '#2B2B2B',
 }
 
 const darkTheme = createMuiTheme({

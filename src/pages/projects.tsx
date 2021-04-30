@@ -14,12 +14,15 @@ const Projects = () => {
   const classes = useStyles({ rowFlex: false })
   const fetcher = (url: string) => fetch(url).then((res) => res.json())
   const { data } = useSWR('/api/projects', fetcher)
-  const halfData = Math.ceil(data?.length / 2)
 
   return (
     <>
       <Head>
         <title>Projects | Adrian Apan</title>
+        <meta
+          name="description"
+          content="Here are some of my side projects. All open source projects are available on my Github profile."
+        />
         <link rel="icon" href="/icons/favicon.ico" />
       </Head>
 
@@ -33,7 +36,7 @@ const Projects = () => {
         <Box mt={4} mb={4}>
           {!data && (
             <Box className={classes.grid}>
-              {[...Array(data?.length)].map((_, i) => (
+              {[...Array(6)].map((_, i) => (
                 <ProjectCardSkeleton key={i} />
               ))}
             </Box>

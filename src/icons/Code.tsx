@@ -1,0 +1,9 @@
+import SvgIcon, { SvgIconProps } from '@material-ui/core/SvgIcon'
+
+const Code = (props: SvgIconProps) => (
+  <SvgIcon {...props} viewBox="0 0 32 22">
+    <path d="M32 9.57998V12.4213L21.3333 17.684V14.7106L28.8533 11L21.3333 7.27998V4.31598L32 9.57998ZM10.6667 14.7106L3.14667 11L10.6667 7.27998V4.31598L0 9.57998V12.4213L10.6667 17.684V14.7106ZM20.0627 0.333313H17.292L11.944 21.6666H14.708L20.0627 0.333313Z" />
+  </SvgIcon>
+)
+
+export default Code
