@@ -1,6 +1,8 @@
 const coreTheme = {
   typography: {
     fontFamily: `"Lato", "Helvetica", "Arial", sans-serif`,
+    fontSize: 16,
+    lineHeight: 1.8,
     h1: {
       fontSize: 62,
       fontWeight: 900,

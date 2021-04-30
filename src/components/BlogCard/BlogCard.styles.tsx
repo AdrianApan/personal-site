@@ -7,7 +7,7 @@ const useStyles = makeStyles((theme) => ({
   title: {
     textTransform: 'none',
     padding: 0,
-    fontSize: 24,
+    fontSize: 20,
 
     [theme.breakpoints.down('xs')]: {
       textAlign: 'left',
