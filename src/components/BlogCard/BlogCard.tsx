@@ -1,7 +1,7 @@
 import { Grid, Button, Typography } from '@material-ui/core'
 import Link from 'next/link'
 
-import BlogData from '../../types/Blog'
+import PostData from '../../types/Post'
 
 import useStyles from './BlogCard.styles'
 import CodeIcon from '../../icons/Code'
@@ -10,12 +10,12 @@ import ChatIcon from '../../icons/Chat'
 import BulbIcon from '../../icons/Bulb'
 
 interface Props {
-  data: BlogData
+  data: PostData
 }
 
 const BlogCard = ({ data }: Props) => {
   const classes = useStyles()
-  const { title, description, link, icon = 'chat' } = data
+  const { title, excerpt, date, slug, icon = 'chat' } = data
 
   const getIcon = (iconType: string) => {
     switch (iconType) {
@@ -36,10 +36,10 @@ const BlogCard = ({ data }: Props) => {
         {getIcon(icon)}
       </Grid>
       <Grid item xs={10} sm={11}>
-        <Link href={link}>
+        <Link href={`blog/${slug}`}>
           <Button className={classes.title}>{title}</Button>
         </Link>
-        <Typography variant="body2">{description}</Typography>
+        <Typography variant="body2">{excerpt}</Typography>
       </Grid>
     </Grid>
   )

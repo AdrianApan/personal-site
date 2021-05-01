@@ -1,11 +1,12 @@
 import React from 'react'
 import Head from 'next/head'
 import useSWR from 'swr'
-import { Box, Divider } from '@material-ui/core'
+import { Box, Divider, Typography } from '@material-ui/core'
 
 import ProjectData from '../types/Project'
-import BlogData from '../types/Blog'
+import PostData from '../types/Post'
 
+import { getAllPosts } from '../lib/api'
 import useStyles from '../styles/main'
 import Hero from '../containers/Hero'
 import HomeHero from '../components/HomeHero'
@@ -15,11 +16,14 @@ import ProjectCardSkeleton from '../components/ProjectCardSkeleton'
 import BlogCard from '../components/BlogCard'
 import BlogCardSkeleton from '../components/BlogCardSkeleton'
 
-const Home = () => {
+interface Props {
+  posts: PostData[]
+}
+
+const Home = ({ posts }: Props) => {
   const classes = useStyles({ rowFlex: false })
   const fetcher = (url: string) => fetch(url).then((res) => res.json())
   const { data: projects } = useSWR('/api/projects', fetcher)
-  const { data: posts } = useSWR('/api/posts', fetcher)
 
   return (
     <>
@@ -72,12 +76,23 @@ const Home = () => {
               </React.Fragment>
             ))}
 
-          {posts?.slice(0, 2).map((post: BlogData, i: number) => (
-            <React.Fragment key={post.title}>
-              <BlogCard data={post} />
-              {i < 1 && <Divider />}
-            </React.Fragment>
-          ))}
+          {posts?.length > 0 ? (
+            posts?.slice(0, 2).map((post: PostData, i: number) => (
+              <React.Fragment key={post.title}>
+                <BlogCard data={post} />
+                {i < 1 && <Divider />}
+              </React.Fragment>
+            ))
+          ) : (
+            <Box alignContent="center" alignSelf="center" mt={3}>
+              <Typography
+                variant="h3"
+                style={{ color: '#8c8c8c', fontWeight: 700, fontSize: 16 }}
+              >
+                The are no available blog posts.
+              </Typography>
+            </Box>
+          )}
         </Box>
       </Box>
     </>
@@ -85,3 +100,11 @@ const Home = () => {
 }
 
 export default Home
+
+export async function getStaticProps() {
+  const posts = getAllPosts(['title', 'excerpt', 'icon', 'date', 'slug'])
+
+  return {
+    props: { posts },
+  }
+}

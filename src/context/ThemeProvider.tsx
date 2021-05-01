@@ -10,7 +10,7 @@ interface ThemeProviderProps {
 
 export const ToggleThemeContext = React.createContext({
   toggleTheme: () => {},
-  isDark: false,
+  isDark: true,
 })
 
 export const ThemeProvider: React.FC<ThemeProviderProps> = ({

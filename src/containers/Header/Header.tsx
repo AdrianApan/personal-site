@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { useContext } from 'react'
 import { Box } from '@material-ui/core'
 
@@ -15,11 +16,13 @@ const Header = () => {
 
   return (
     <Box className={classes.inner}>
-      {isDark ? (
-        <LogoLight style={{ width: 43, height: 43 }} />
-      ) : (
-        <LogoDark style={{ width: 43, height: 43 }} />
-      )}
+      <Link href="/">
+        {isDark ? (
+          <LogoLight style={{ width: 43, height: 43, cursor: 'pointer' }} />
+        ) : (
+          <LogoDark style={{ width: 43, height: 43, cursor: 'pointer' }} />
+        )}
+      </Link>
       <Box
         style={{ marginLeft: 'auto', display: 'flex', alignItems: 'center' }}
       >
