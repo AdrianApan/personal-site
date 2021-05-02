@@ -25,7 +25,6 @@ const useStyles = makeStyles((theme) => ({
     '& h4': {
       fontSize: 22,
       fontWeight: 700,
-      color: '#3BA1BB',
     },
     '& a': {
       color: '#3BA1BB',
