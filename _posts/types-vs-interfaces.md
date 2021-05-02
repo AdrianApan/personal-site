@@ -74,7 +74,7 @@ There is really not much difference here in terms of functionality. However, per
 Furthermore, a few more differences that you should be aware:
 
 - Type aliases may not participate in declaration merging, but interfaces can.
-- Interfaces may only be used to declare the shapes of object, not re-name primitives.
+- Interfaces may only be used to declare the shapes of object, not rename primitives.
 - Interface names will always appear in their original form in error messages, but only when they are used by name.
 
 To wrap it up, I would recommend using interfaces for most of the part in your code unless you need to use certain features from type.
