@@ -1,5 +1,5 @@
-import Link from 'next/link'
 import { useContext } from 'react'
+import { useRouter } from 'next/router'
 import { Box } from '@material-ui/core'
 
 import useStyles from '../../styles/main'
@@ -12,17 +12,24 @@ import { ToggleThemeContext } from '../../context/ThemeProvider'
 
 const Header = () => {
   const classes = useStyles({ rowFlex: true })
+  const router = useRouter()
   const { toggleTheme, isDark } = useContext(ToggleThemeContext)
+  const handleClick = (url: string) => router.push(url)
 
   return (
     <Box className={classes.inner}>
-      <Link href="/">
-        {isDark ? (
-          <LogoLight style={{ width: 43, height: 43, cursor: 'pointer' }} />
-        ) : (
-          <LogoDark style={{ width: 43, height: 43, cursor: 'pointer' }} />
-        )}
-      </Link>
+      {isDark ? (
+        <LogoLight
+          style={{ width: 43, height: 43, cursor: 'pointer' }}
+          onClick={() => handleClick('/')}
+        />
+      ) : (
+        <LogoDark
+          style={{ width: 43, height: 43, cursor: 'pointer' }}
+          onClick={() => handleClick('/')}
+        />
+      )}
+
       <Box
         style={{ marginLeft: 'auto', display: 'flex', alignItems: 'center' }}
       >
