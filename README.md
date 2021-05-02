@@ -5,4 +5,4 @@ Built using Next JS, Typescript & Material UI.
 
 ### Contributions
 
-- tbd.
+- tba.
