@@ -1,9 +1,9 @@
 import Head from 'next/head'
-import useSWR from 'swr'
-import { Box } from '@material-ui/core'
+import { Box, Typography } from '@material-ui/core'
 
 import ProjectData from '../types/Project'
 
+import { projects } from '../lib/projects'
 import useStyles from '../styles/main'
 import Hero from '../containers/Hero'
 import ProjectsHero from '../components/ProjectsHero'
@@ -12,8 +12,6 @@ import ProjectCardSkeleton from '../components/ProjectCardSkeleton'
 
 const Projects = () => {
   const classes = useStyles({ rowFlex: false })
-  const fetcher = (url: string) => fetch(url).then((res) => res.json())
-  const { data } = useSWR('/api/projects', fetcher)
 
   return (
     <>
@@ -34,7 +32,7 @@ const Projects = () => {
 
       <Box className={classes.inner}>
         <Box mt={4} mb={4}>
-          {!data && (
+          {!projects && (
             <Box className={classes.grid}>
               {[...Array(6)].map((_, i) => (
                 <ProjectCardSkeleton key={i} />
@@ -43,9 +41,20 @@ const Projects = () => {
           )}
 
           <Box className={classes.grid}>
-            {data?.map((project: ProjectData) => (
-              <ProjectCard key={project.title} data={project} />
-            ))}
+            {projects?.length > 0 ? (
+              projects?.map((project: ProjectData) => (
+                <ProjectCard key={project.title} data={project} />
+              ))
+            ) : (
+              <Box alignContent="center" alignSelf="center" mt={3}>
+                <Typography
+                  variant="h3"
+                  style={{ color: '#8c8c8c', fontWeight: 700, textAlign: 'center' }}
+                >
+                  The are no available projects.
+                </Typography>
+              </Box>
+            )}
           </Box>
         </Box>
       </Box>

@@ -1,12 +1,12 @@
 import React from 'react'
 import Head from 'next/head'
-import useSWR from 'swr'
 import { Box, Divider, Typography } from '@material-ui/core'
 
 import ProjectData from '../types/Project'
 import PostData from '../types/Post'
 
 import { getAllPosts } from '../lib/api'
+import { projects } from '../lib/projects'
 import useStyles from '../styles/main'
 import Hero from '../containers/Hero'
 import HomeHero from '../components/HomeHero'
@@ -22,8 +22,6 @@ interface Props {
 
 const Home = ({ posts }: Props) => {
   const classes = useStyles({ rowFlex: false })
-  const fetcher = (url: string) => fetch(url).then((res) => res.json())
-  const { data: projects } = useSWR('/api/projects', fetcher)
 
   return (
     <>
@@ -59,9 +57,22 @@ const Home = ({ posts }: Props) => {
           )}
 
           <Box className={classes.grid} mt={4}>
-            {projects?.slice(0, 4).map((project: ProjectData) => (
-              <ProjectCard key={project.title} data={project} compact />
-            ))}
+            {projects?.length > 0 ? (
+              projects
+                ?.slice(0, 4)
+                .map((project: ProjectData) => (
+                  <ProjectCard key={project.title} data={project} compact />
+                ))
+            ) : (
+              <Box alignContent="center" alignSelf="center">
+                <Typography
+                  variant="h3"
+                  style={{ color: '#8c8c8c', fontWeight: 700, fontSize: 16 }}
+                >
+                  The are no available projects.
+                </Typography>
+              </Box>
+            )}
           </Box>
         </Box>
 
