@@ -16,7 +16,7 @@ export const ToggleThemeContext = React.createContext({
 export const ThemeProvider: React.FC<ThemeProviderProps> = ({
   children,
 }: ThemeProviderProps) => {
-  const [themePalette, setThemePalette] = useState<string | null>(null)
+  const [themePalette, setThemePalette] = useState<string>('darkTheme')
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
