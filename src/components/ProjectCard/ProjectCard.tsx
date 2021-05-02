@@ -21,7 +21,7 @@ const ProjectCard = ({ data, compact = false }: Props) => {
       <Grid container>
         <Grid item xs={2} className={classes.thumbnailContainer}>
           <img
-            src={`./assets/images/${image}`}
+            src={`/assets/images/${image}`}
             alt={title}
             className={classes.thumbnail}
           />
