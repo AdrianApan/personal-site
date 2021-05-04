@@ -19,11 +19,11 @@ const PAGES = [
   },
   {
     label: 'PROJECTS',
-    link: '/projects',
+    link: '/projects/',
   },
   {
     label: 'BLOG',
-    link: '/blog',
+    link: '/blog/',
   },
 ]
 
