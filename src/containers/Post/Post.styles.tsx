@@ -74,7 +74,11 @@ const useStyles = makeStyles((theme) => ({
     },
     '& code': {
       '&.hljs': {
-        backgroundColor: '#191919',
+        backgroundColor: '#212121',
+        fontFamily: `"Source Code Pro", "Consolas", monospace`,
+        color: '#FFFFFF',
+        padding: theme.spacing(4),
+        borderRadius: theme.spacing(1),
       },
     },
   },
