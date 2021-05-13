@@ -41,7 +41,7 @@ const Post = ({ post }: Props) => {
         <meta property="og:description" content={post.excerpt} />
         <meta
           property="og:image"
-          content={`/assets/blog/open-graph/${post.icon}.png`}
+          content={`https://adrianapan.com/assets/blog/open-graph/${post.icon}.png`}
         />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="@adrianapan" />
@@ -49,7 +49,7 @@ const Post = ({ post }: Props) => {
         <meta name="twitter:title" content={post.title} />
         <meta
           name="twitter:image"
-          content={`/assets/blog/open-graph/${post.icon}.png`}
+          content={`https://adrianapan.com/assets/blog/open-graph/${post.icon}.png`}
         />
         <meta name="twitter:image:alt" content={post.title} />
       </Head>
