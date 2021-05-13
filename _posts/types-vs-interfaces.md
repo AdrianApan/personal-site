@@ -23,7 +23,7 @@ const data: Measurements = { length: 42 }
 // Property 'width' is missing in type '{ length: number; }'
 ```
 
-The **data** variable expects a **width** property. This is an expected behaviour, meaning adding a new field to an existing interface worked fine in the above example.
+The `data` variable expects a `width` property. This is an expected behaviour, meaning adding a new field to an existing interface worked fine in the above example.
 
 #### A type cannot be changed after being created
 
