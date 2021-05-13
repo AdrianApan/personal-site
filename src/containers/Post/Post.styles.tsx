@@ -73,6 +73,11 @@ const useStyles = makeStyles((theme) => ({
       margin: theme.spacing(3, 0),
     },
     '& code': {
+      background: '#212121',
+      color: '#fbfbfb',
+      padding: '0px 5px',
+      borderRadius: 3,
+
       '&.hljs': {
         backgroundColor: '#212121',
         fontFamily: `"Source Code Pro", "Consolas", monospace`,
