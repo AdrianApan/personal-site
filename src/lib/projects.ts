@@ -38,12 +38,4 @@ export const projects = [
     link: 'https://github.com/AdrianApan/machine-learning-templates',
     repository: 'https://github.com/AdrianApan/machine-learning-templates',
   },
-  {
-    title: 'Censtats',
-    description:
-      'US census data aggregation project. Built with Node and Express.',
-    image: 'censtats.png',
-    link: 'https://search.censtats.com/',
-    repository: null,
-  },
 ]
