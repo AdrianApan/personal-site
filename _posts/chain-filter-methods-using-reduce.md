@@ -12,7 +12,6 @@ Here is a short, readable and easy to understand way to chain multiple filter() 
 ```js
 /**
  * ℹ️ Topic: Chain filter() methods using reduce()
- * ✏️ Author: Adrian Apan
  */
 
 const filteredData = (data, filters) =>
