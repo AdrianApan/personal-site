@@ -118,7 +118,7 @@ test('It should display the full name', async () => {
 
 #### Routing
 
-In my example app I made use of `@reach/router`, however React Router should follow the same principles. To mock routing and the hooks that come with it, we'll follow the general rule of mocking hooks:
+In my example app I made use of `@reach/router`, however React Router should follow the same principles. To mock routing and the hooks that comes with it, we'll follow the general rule of mocking hooks:
 
 ```tsx
 jest.mock('@reach/router', () => ({
@@ -134,7 +134,7 @@ _This should sit on the top of your unit test just below the imports and above y
 
 - We use `jest.mock` to mock the `@reach/router` module.
 
-- We need to make sure that everything from the actual module is used, up until we want to override something. To do this we are making use of the `jest.requiredActual()` method and the ES6 spread operator.
+- We need to make sure that everything from the actual module is used, up until we want to override something. To do this we are making use of the `jest.requiredActual()` method and the ES6 spread syntax.
 
 - We then override the `useParams` and `navigate` hooks (but you can override as few or as many as you need).
 
@@ -146,7 +146,7 @@ _This should sit on the top of your unit test just below the imports and above y
 
 ![Example app demo](https://raw.githubusercontent.com/AdrianApan/personal-site/master/public/assets/blog/posts/testing_app_example.gif)
 
-This might be a contrived example since real world application are fairly more complex, to say the least. However, trimmed back sufficiently, we can come up the following functionality:
+This might be a contrived example since real world application are fairly more complex of course. However, trimmed back sufficiently, we can come up the following functionality:
 
 - Query an API endpoint (`GET` call)
 - Pull the data from the endpoint and store it in Redux
@@ -154,7 +154,7 @@ This might be a contrived example since real world application are fairly more c
 - Data should be paginated, each entry is a new page
 - Entry ID is reflected in the URL (`/people/1`)
 - Details should be hidden by default
-- To show the details, use needs to click a toggle button
+- To show the details, the user needs to click a toggle button
 
 Again, the full repository of this example can be found [here](https://github.com/AdrianApan/react-testing-setup-example).
 
@@ -311,7 +311,7 @@ jest.mock('@reach/router', () => ({
 }))
 ```
 
-- We create a `mockState` object - think of it as one of your slices/objects from Redux.
+- We create a `mockState` object
 
 ```tsx
 // Mock store
@@ -349,7 +349,7 @@ beforeEach(() => {
 
 As you might have noticed by now, in the `User` component I have separated the presentational layer (UI elements) from the "business" or logical layer, by using a custom hook (see the `useUser.tsx` file). This is a practice I would highly recommend not just because it makes testing easy, but also because it's an absolute breeze to maintain, especially in a fast paced software engineering environment.
 
-In our particular case the custom hook is quite basic so no real issues here but I want to leave you with another tip when it comes to testing a custom React hook. Let's take a slightly different example: a hook that makes a direct API call and saves it a local state.
+In our particular case the custom hook is quite basic so no real issues here but I want to leave you with another tip when it comes to testing a custom React hook. Let's take a slightly different example: a hook that makes a direct API call and saves it in a local state.
 
 ```tsx
 // Example hook
