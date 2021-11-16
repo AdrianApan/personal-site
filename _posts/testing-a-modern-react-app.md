@@ -1,5 +1,5 @@
 ---
-title: 'How to use React Testing Library to test a modern React component'
+title: 'How to use React Testing Library to test a modern React application'
 excerpt: 'Learn how to set up and test a production ready React application built with Redux, React hooks, routing and custom hooks; by making use of React Testing Library and Jest.'
 icon: 'book'
 date: '2021-11-15T06:14:05+0000'
