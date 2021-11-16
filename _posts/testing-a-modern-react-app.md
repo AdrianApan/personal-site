@@ -144,7 +144,7 @@ _This should sit on the top of your unit test just below the imports and above y
 
 #### Example app
 
-![Example app demo](../public/assets/blog/posts/testing_app_example.gif)
+![Example app demo](https://raw.githubusercontent.com/AdrianApan/personal-site/master/public/assets/blog/posts/testing_app_example.gif)
 
 This might be a contrived example since real world application are fairly more complex, to say the least. However, trimmed back sufficiently, we can come up the following functionality:
 
@@ -343,7 +343,7 @@ beforeEach(() => {
 
 - Finally we cover the scenarios we want to test for
 
-![Testing results](../public/assets/blog/posts/testing_results.png)
+![Testing results](https://raw.githubusercontent.com/AdrianApan/personal-site/master/public/assets/blog/posts/testing_results.png)
 
 #### Testing custom hooks
 
