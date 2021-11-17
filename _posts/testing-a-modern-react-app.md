@@ -21,7 +21,7 @@ To start with, we'll need to add React Testing Library and Jest to our applicati
 npm install --save-dev @testing-library/react jest
 ```
 
-In the [example repository](https://github.com/AdrianApan/react-testing-setup-example) I've create a simple react app with [Vite](https://vitejs.dev/). Most likely your setup will be more complex, so if you run into any problems installing RTL and Jest make sure to consult the official documentation. For ease of access I've listed these below:
+In the [example repository](https://github.com/AdrianApan/react-testing-setup-example) I've create a simple react app with [Vite](https://vitejs.dev/). Most likely your setup will be more complex, and of course more configuration will be needed (especially for Jest), so if you run into any problems installing and configuring RTL and Jest make sure to consult the official documentation. For ease of access I've listed the links below:
 
 - [React Testing Library docs](https://testing-library.com/docs/react-testing-library/intro)
 - [Jest docs](https://jestjs.io/docs/getting-started)
@@ -32,7 +32,7 @@ In the [example repository](https://github.com/AdrianApan/react-testing-setup-ex
 
 #### Redux
 
-Before diving into this section, let's install [redux-mock-store](https://www.npmjs.com/package/redux-mock-store). We are going to use this package to setup and configure our testing utility file.
+Before diving into this section, let's install [redux-mock-store](https://www.npmjs.com/package/redux-mock-store). We are going to use this package to setup and configure our test utility file.
 
 ```sh
 npm install --save-dev redux-mock-store
@@ -86,7 +86,7 @@ export { render }
 
 _**Let's do a quick walk-through of what's happening here.**_
 
-- We are extending the `RenderOptions` from React Testing Library to expect a state object and a store (store being optional).
+- We are extending the `RenderOptions` from React Testing Library to expect an intial state and a store object.
 
 - Whenever `render` is called, we are setting `initialState` to an empty object by default - however, as you correctly noticed, we can still pass in an `initialState` when using this in our tests, alongside other options.
 
@@ -118,7 +118,7 @@ test('It should display the full name', async () => {
 
 #### Routing
 
-In my example app I made use of `@reach/router`, however React Router should follow the same principles. To mock routing and the hooks that comes with it, we'll follow the general rule of mocking hooks:
+In my example app I made use of `@reach/router`, however React Router should follow the same principles. To mock routing and the hooks that comes with it, we'll follow the general rules of mocking a module:
 
 ```tsx
 jest.mock('@reach/router', () => ({
@@ -134,7 +134,7 @@ _This should sit on the top of your unit test just below the imports and above y
 
 - We use `jest.mock` to mock the `@reach/router` module.
 
-- We need to make sure that everything from the actual module is used, up until we want to override something. To do this we are making use of the `jest.requiredActual()` method and the ES6 spread syntax.
+- We need to make sure that everything from the actual module is actually used, up until we want to override something. To do this we are making use of the `jest.requiredActual()` method and the ES6 spread syntax.
 
 - We then override the `useParams` and `navigate` hooks (but you can override as few or as many as you need).
 
@@ -146,7 +146,7 @@ _This should sit on the top of your unit test just below the imports and above y
 
 ![Example app demo](https://raw.githubusercontent.com/AdrianApan/personal-site/master/public/assets/blog/posts/testing_app_example.gif)
 
-This might be a contrived example since real world application are fairly more complex of course. However, trimmed back sufficiently, we can come up the following functionality:
+This might be a contrived example since real world applications are more complex of course. However, trimmed back sufficiently, we can come up the following functionality:
 
 - Query an API endpoint (`GET` call)
 - Pull the data from the endpoint and store it in Redux
@@ -333,7 +333,7 @@ const mockState = {
 }
 ```
 
-- We pass in this `mockState` to the `render` method
+- We pass in this `mockState` object to the `render` method
 
 ```tsx
 beforeEach(() => {
@@ -349,7 +349,7 @@ beforeEach(() => {
 
 As you might have noticed by now, in the `User` component I have separated the presentational layer (UI elements) from the "business" or logical layer, by using a custom hook (see the `useUser.tsx` file). This is a practice I would highly recommend not just because it makes testing easy, but also because it's an absolute breeze to maintain, especially in a fast paced software engineering environment.
 
-In our particular case the custom hook is quite basic so no real issues here but I want to leave you with another tip when it comes to testing a custom React hook. Let's take a slightly different example: a hook that makes a direct API call and saves it in a local state.
+In our particular case the custom hook is quite basic, so no real issues here, but I want to leave you with another tip when it comes to testing a custom React hook. Let's take a slightly different example: a hook that makes a direct API call and saves it in a local state.
 
 ```tsx
 // Example hook
