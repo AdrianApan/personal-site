@@ -8,6 +8,14 @@ export const projects = [
     repository: 'https://github.com/AdrianApan/yamde',
   },
   {
+    title: 'React micro-frontends PoC',
+    description:
+      'React micro-frontend PoC with Webpack Module Federation, Lerna and Typescript.',
+    image: 'react_mfe_poc.png',
+    link: 'https://github.com/AdrianApan/mfe-react',
+    repository: 'https://github.com/AdrianApan/mfe-react',
+  },
+  {
     title: 'NPM dependency graph',
     description:
       'Node module dependency graph search and visualiser build with React.',
