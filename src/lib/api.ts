@@ -26,7 +26,6 @@ export function getPostBySlug(slug: string, fields: string[] = []): Partial<Post
     if (field === 'content') {
       items[field] = content
     }
-
     if (data[field]) {
       items[field] = data[field]
     }
