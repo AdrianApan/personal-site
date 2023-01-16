@@ -9,7 +9,6 @@ import NodeIcon from '../../icons/Node'
 import EmailIcon from '../../icons/Email'
 import LinkedinIcon from '../../icons/Linkedin'
 import GithubIcon from '../../icons/Github'
-import TwitterIcon from '../../icons/Twitter'
 
 import useStyles from './HomeHero.styles'
 import SocialLink from '../SocialLink'
@@ -56,13 +55,6 @@ const HomeHero = () => {
               label="github.com/adrianapan"
               link="https://github.com/adrianapan"
               icon={<GithubIcon />}
-            />
-          </ListItem>
-          <ListItem>
-            <SocialLink
-              label="@adrianapan"
-              link="https://twitter.com/adrianapan"
-              icon={<TwitterIcon />}
             />
           </ListItem>
         </List>
