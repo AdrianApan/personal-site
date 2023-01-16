@@ -4,6 +4,7 @@ import { Box, Button, Hidden, Menu as MuiMenu, MenuItem, IconButton } from '@mat
 import useStyles from './Menu.styles'
 import MenuIcon from '../../icons/Menu'
 import ActiveLink from '../ActiveLink'
+import useMenu from './useMenu'
 
 const PAGES = [
   {
@@ -22,10 +23,7 @@ const PAGES = [
 
 const Menu = () => {
   const classes = useStyles()
-  const [anchorEl, setAnchorEl] = useState(null)
-  const open = Boolean(anchorEl)
-
-  const handleClose = () => setAnchorEl(null)
+  const { anchorEl, setAnchorEl, open, handleClose } = useMenu()
 
   return (
     <Box className={classes.menu}>
