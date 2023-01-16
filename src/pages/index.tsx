@@ -42,11 +42,7 @@ const Home = ({ posts }: Props) => {
 
       <Box className={classes.inner}>
         <Box mt={3} mb={3}>
-          <SectionHeader
-            title="Projects"
-            link="/projects"
-            label="View all projects"
-          />
+          <SectionHeader title="Projects" link="/projects" label="View all projects" />
 
           {!projects && (
             <Box className={classes.grid} mt={4}>
@@ -96,10 +92,7 @@ const Home = ({ posts }: Props) => {
             ))
           ) : (
             <Box alignContent="center" alignSelf="center" mt={3}>
-              <Typography
-                variant="h3"
-                style={{ color: '#8c8c8c', fontWeight: 700, fontSize: 16 }}
-              >
+              <Typography variant="h3" style={{ color: '#8c8c8c', fontWeight: 700, fontSize: 16 }}>
                 The are no available blog posts.
               </Typography>
             </Box>

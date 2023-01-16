@@ -9,24 +9,21 @@ export const projects = [
   },
   {
     title: 'React micro-frontends PoC',
-    description:
-      'React micro-frontend PoC with Webpack Module Federation, Lerna and Typescript.',
+    description: 'React micro-frontend PoC with Webpack Module Federation, Lerna and Typescript.',
     image: 'react_mfe_poc.png',
     link: 'https://github.com/AdrianApan/mfe-react',
     repository: 'https://github.com/AdrianApan/mfe-react',
   },
   {
     title: 'NPM dependency graph',
-    description:
-      'Node module dependency graph search and visualiser build with React.',
+    description: 'Node module dependency graph search and visualiser build with React.',
     image: 'npm_deps_graph.png',
     link: 'https://adrianapan.github.io/npm-dependency-graph/',
     repository: 'https://github.com/AdrianApan/npm-dependency-graph',
   },
   {
     title: 'Highlighter prototype',
-    description:
-      'Interactive document/text highlighter proof of concept build with React.',
+    description: 'Interactive document/text highlighter proof of concept build with React.',
     image: 'highlighter_prototype.png',
     link: 'https://adrianapan.github.io/highlighter-prototype/',
     repository: 'https://github.com/AdrianApan/highlighter-prototype',
@@ -40,8 +37,7 @@ export const projects = [
   },
   {
     title: 'Machine learning templates',
-    description:
-      'Machine learning templates and course notes written in Python.',
+    description: 'Machine learning templates and course notes written in Python.',
     image: 'ml_templates.png',
     link: 'https://github.com/AdrianApan/machine-learning-templates',
     repository: 'https://github.com/AdrianApan/machine-learning-templates',

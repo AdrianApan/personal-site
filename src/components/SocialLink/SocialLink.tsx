@@ -10,12 +10,7 @@ const SocialLink = ({ label, link, icon }: Props) => {
   const classes = useStyles()
 
   return (
-    <a
-      href={link}
-      target="_blank"
-      rel="noopener noreferrer"
-      className={classes.link}
-    >
+    <a href={link} target="_blank" rel="noopener noreferrer" className={classes.link}>
       {icon} {label}
     </a>
   )

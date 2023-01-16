@@ -33,10 +33,7 @@ const Post = ({ post }: Props) => {
         <link rel="icon" href="/icons/favicon.ico" />
         <meta property="og:type" content="article" />
         <meta property="article:published_time" content={post.date} />
-        <meta
-          property="og:url"
-          content={`https://adrianapan.com/blog/${post.slug}`}
-        />
+        <meta property="og:url" content={`https://adrianapan.com/blog/${post.slug}`} />
         <meta property="og:title" content={post.title} />
         <meta property="og:description" content={post.excerpt} />
         <meta
@@ -73,19 +70,8 @@ const Post = ({ post }: Props) => {
 
 export default Post
 
-export async function getStaticProps({
-  params,
-}: {
-  params: Partial<PostData>
-}) {
-  const post = getPostBySlug(params.slug, [
-    'title',
-    'excerpt',
-    'icon',
-    'date',
-    'slug',
-    'content',
-  ])
+export async function getStaticProps({ params }: { params: Partial<PostData> }) {
+  const post = getPostBySlug(params.slug, ['title', 'excerpt', 'icon', 'date', 'slug', 'content'])
   const content = await markdownToHtml(post.content || '')
 
   return {

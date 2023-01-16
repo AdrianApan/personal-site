@@ -7,8 +7,8 @@ const BlogHero = () => (
         <Typography variant="h1">Blog</Typography>
         <Box mt={4}>
           <Typography variant="h2">
-            A collection of <strong>thoughts</strong>, <strong>snippets</strong>{' '}
-            and various <strong>developer resources</strong>.
+            A collection of <strong>thoughts</strong>, <strong>snippets</strong> and various{' '}
+            <strong>developer resources</strong>.
           </Typography>
         </Box>
       </Grid>

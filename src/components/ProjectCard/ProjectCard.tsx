@@ -20,11 +20,7 @@ const ProjectCard = ({ data, compact = false }: Props) => {
     <Box mb={2}>
       <Grid container>
         <Grid item xs={2} className={classes.thumbnailContainer}>
-          <img
-            src={`/assets/images/${image}`}
-            alt={title}
-            className={classes.thumbnail}
-          />
+          <img src={`/assets/images/${image}`} alt={title} className={classes.thumbnail} />
         </Grid>
         <Grid item xs={10}>
           {!compact ? (
@@ -41,20 +37,14 @@ const ProjectCard = ({ data, compact = false }: Props) => {
             <Box className={classes.links}>
               <Box className={classes.linkItem}>
                 <ProjectIcon style={{ fontSize: 18 }} />{' '}
-                <Button
-                  className={classes.smallLink}
-                  onClick={() => handleClick(link)}
-                >
+                <Button className={classes.smallLink} onClick={() => handleClick(link)}>
                   View project
                 </Button>
               </Box>
               <Box className={classes.linkItem}>
                 <GithubIcon style={{ fontSize: 18 }} />
                 {repository ? (
-                  <Button
-                    className={classes.smallLink}
-                    onClick={() => handleClick(repository)}
-                  >
+                  <Button className={classes.smallLink} onClick={() => handleClick(repository)}>
                     View source code
                   </Button>
                 ) : (

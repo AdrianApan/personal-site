@@ -12,10 +12,8 @@ const useStyles = makeStyles((theme) => ({
     width: '100%',
     display: 'flex',
     justifyContent: 'center',
-    flexDirection: ({ rowFlex }: Partial<StyleProps>) =>
-      rowFlex ? 'row' : 'column',
-    alignItems: ({ rowFlex }: Partial<StyleProps>) =>
-      rowFlex ? 'center' : 'inherit',
+    flexDirection: ({ rowFlex }: Partial<StyleProps>) => (rowFlex ? 'row' : 'column'),
+    alignItems: ({ rowFlex }: Partial<StyleProps>) => (rowFlex ? 'center' : 'inherit'),
   },
   grid: {
     display: 'grid',

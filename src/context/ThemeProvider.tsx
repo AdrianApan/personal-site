@@ -13,9 +13,7 @@ export const ToggleThemeContext = React.createContext({
   isDark: true,
 })
 
-export const ThemeProvider: React.FC<ThemeProviderProps> = ({
-  children,
-}: ThemeProviderProps) => {
+export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }: ThemeProviderProps) => {
   const [themePalette, setThemePalette] = useState<string>('darkTheme')
 
   useEffect(() => {
@@ -23,10 +21,9 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({
       const localTheme = window.localStorage.getItem('theme')
       if (!localTheme) {
         setThemePalette(
-          window.matchMedia &&
-            window.matchMedia('(prefers-color-scheme: dark)').matches
+          window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
             ? 'darkTheme'
-            : 'lightTheme'
+            : 'lightTheme',
         )
       } else {
         setThemePalette(localTheme)
@@ -35,13 +32,8 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({
   }, [])
 
   function toggleTheme() {
-    setThemePalette((prev) =>
-      prev === 'lightTheme' ? 'darkTheme' : 'lightTheme'
-    )
-    window.localStorage.setItem(
-      'theme',
-      themePalette === 'lightTheme' ? 'darkTheme' : 'lightTheme'
-    )
+    setThemePalette((prev) => (prev === 'lightTheme' ? 'darkTheme' : 'lightTheme'))
+    window.localStorage.setItem('theme', themePalette === 'lightTheme' ? 'darkTheme' : 'lightTheme')
   }
 
   return (
@@ -51,9 +43,7 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({
         isDark: !(themePalette === 'lightTheme'),
       }}
     >
-      <MuiThemeProvider
-        theme={themePalette === 'darkTheme' ? darkTheme : lightTheme}
-      >
+      <MuiThemeProvider theme={themePalette === 'darkTheme' ? darkTheme : lightTheme}>
         <CssBaseline />
         {children}
       </MuiThemeProvider>

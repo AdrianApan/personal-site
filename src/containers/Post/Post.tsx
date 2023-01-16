@@ -14,12 +14,7 @@ const Post = ({ content }: { content: string }) => {
     })
   }, [content])
 
-  return (
-    <div
-      className={classes.post}
-      dangerouslySetInnerHTML={{ __html: content }}
-    />
-  )
+  return <div className={classes.post} dangerouslySetInnerHTML={{ __html: content }} />
 }
 
 export default Post

@@ -30,9 +30,7 @@ const Header = () => {
         />
       )}
 
-      <Box
-        style={{ marginLeft: 'auto', display: 'flex', alignItems: 'center' }}
-      >
+      <Box style={{ marginLeft: 'auto', display: 'flex', alignItems: 'center' }}>
         <Menu />
         <ThemeToggler toggleTheme={toggleTheme} isDark={isDark} />
       </Box>

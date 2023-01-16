@@ -1,12 +1,5 @@
 import { useState } from 'react'
-import {
-  Box,
-  Button,
-  Hidden,
-  Menu as MuiMenu,
-  MenuItem,
-  IconButton,
-} from '@material-ui/core'
+import { Box, Button, Hidden, Menu as MuiMenu, MenuItem, IconButton } from '@material-ui/core'
 
 import useStyles from './Menu.styles'
 import MenuIcon from '../../icons/Menu'
@@ -52,12 +45,7 @@ const Menu = () => {
         >
           <MenuIcon />
         </IconButton>
-        <MuiMenu
-          anchorEl={anchorEl}
-          keepMounted
-          open={open}
-          onClose={handleClose}
-        >
+        <MuiMenu anchorEl={anchorEl} keepMounted open={open} onClose={handleClose}>
           {PAGES?.map(({ label, link }) => (
             <MenuItem key={label}>
               <ActiveLink href={link} activeClassName={classes.active}>

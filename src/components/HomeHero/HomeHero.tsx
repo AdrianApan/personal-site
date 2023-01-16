@@ -1,11 +1,4 @@
-import {
-  Grid,
-  Typography,
-  Box,
-  List,
-  ListItem,
-  Hidden,
-} from '@material-ui/core'
+import { Grid, Typography, Box, List, ListItem, Hidden } from '@material-ui/core'
 
 import HeartIcon from '../../icons/Heart'
 import JavascriptIcon from '../../icons/Javascript'
@@ -30,17 +23,13 @@ const HomeHero = () => {
         <Grid item xs={12}>
           <Typography variant="h1">Hello, I'm Adrian.</Typography>
           <Box mt={4}>
-            <Typography variant="h2">
-              I'm a Javascript Engineer based in London, UK.
-            </Typography>
+            <Typography variant="h2">I'm a Javascript Engineer based in London, UK.</Typography>
             <Typography variant="h2" className={classes.copy}>
-              I <HeartIcon htmlColor="#E03737" style={{ fontSize: 20 }} />{' '}
-              working with{' '}
+              I <HeartIcon htmlColor="#E03737" style={{ fontSize: 20 }} /> working with{' '}
               <Hidden smUp>
                 <br />
               </Hidden>
-              <JavascriptIcon /> <ReactIcon /> <TypescriptIcon /> <ReduxIcon />{' '}
-              <NodeIcon />
+              <JavascriptIcon /> <ReactIcon /> <TypescriptIcon /> <ReduxIcon /> <NodeIcon />
             </Typography>
           </Box>
         </Grid>

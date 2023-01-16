@@ -1,1 +1,1 @@
-export {default} from './ActiveLink'
+export { default } from './ActiveLink'

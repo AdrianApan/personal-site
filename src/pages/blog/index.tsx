@@ -53,10 +53,7 @@ const Blog = ({ posts }: Props) => {
           ))
         ) : (
           <Box alignContent="center" alignSelf="center" mt={6}>
-            <Typography
-              variant="h3"
-              style={{ color: '#8c8c8c', fontWeight: 700 }}
-            >
+            <Typography variant="h3" style={{ color: '#8c8c8c', fontWeight: 700 }}>
               The are no available blog posts.
             </Typography>
           </Box>
