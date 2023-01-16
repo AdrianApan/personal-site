@@ -15,13 +15,6 @@ export const projects = [
     repository: 'https://github.com/AdrianApan/mfe-react',
   },
   {
-    title: 'NPM dependency graph',
-    description: 'Node module dependency graph search and visualiser build with React.',
-    image: 'npm_deps_graph.png',
-    link: 'https://adrianapan.github.io/npm-dependency-graph/',
-    repository: 'https://github.com/AdrianApan/npm-dependency-graph',
-  },
-  {
     title: 'Highlighter prototype',
     description: 'Interactive document/text highlighter proof of concept build with React.',
     image: 'highlighter_prototype.png',
@@ -29,17 +22,10 @@ export const projects = [
     repository: 'https://github.com/AdrianApan/highlighter-prototype',
   },
   {
-    title: 'Mars weather insight',
-    description: "Mars weather insight webapp built with NASA's InSight API.",
-    image: 'mars_weather.png',
-    link: 'https://adrianapan.github.io/mars-weather-insight/',
-    repository: 'https://github.com/AdrianApan/mars-weather-insight',
-  },
-  {
-    title: 'Machine learning templates',
-    description: 'Machine learning templates and course notes written in Python.',
-    image: 'ml_templates.png',
-    link: 'https://github.com/AdrianApan/machine-learning-templates',
-    repository: 'https://github.com/AdrianApan/machine-learning-templates',
+    title: 'NPM dependency graph',
+    description: 'Node module dependency graph search and visualiser build with React.',
+    image: 'npm_deps_graph.png',
+    link: 'https://adrianapan.github.io/npm-dependency-graph/',
+    repository: 'https://github.com/AdrianApan/npm-dependency-graph',
   },
 ]
