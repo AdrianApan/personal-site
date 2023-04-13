@@ -1,8 +1,8 @@
 ---
 title: 'Writing a book with GPT-4 and Midjourney'
-excerpt: 'A write-up on how I've created a children's book with GPT-4 and Midjourney and published it through Amazon KDP.'
+excerpt: "A write-up on how I've created a children's book with GPT-4 and Midjourney and published it through Amazon KDP."
 icon: 'book'
-date: '2023-04-14T00:13:37+0000'
+date: '2023-04-13T00:13:37+0000'
 ---
 
 ### 🌱 The idea
