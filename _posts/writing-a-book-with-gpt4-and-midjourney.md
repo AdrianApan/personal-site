@@ -13,7 +13,7 @@ This motivation, coupled with my fascination for [Midjourney](https://www.midjou
 
 After doing some initial research on Amazon, I decided on writing a children's book in rhyming verse about a friendly whale that goes on a journey to discover and learn about different emotions, such as happiness, sadness, fear, anger, disgust, and surprise.
 
-If you are eager to see the end result, you can purchase the book on Amazon (both paperback and eBook/Kindle formats):[https://www.amazon.co.uk/Luna-journey-emotions-Nata-Pows/dp/B0C1JK6KH7](https://www.amazon.co.uk/Luna-journey-emotions-Nata-Pows/dp/B0C1JK6KH7).
+If you are eager to see the end result, you can purchase the book on Amazon (both paperback and eBook/Kindle formats): [https://www.amazon.co.uk/Luna-journey-emotions-Nata-Pows/dp/B0C1JK6KH7](https://www.amazon.co.uk/Luna-journey-emotions-Nata-Pows/dp/B0C1JK6KH7).
 
 ---
 
@@ -25,12 +25,13 @@ To kickstart things, I needed a name for the main character - a perfect first ta
 
 🔍 <ins>Finding a name for the main character<ins>
 
-```
+```txt
 ----------
 🔍 PROMPT:
 ----------
 
-Generate 10 names for a whale character for a children's book for 3 to 8 years old. Names should be unique and easy to remember.
+Generate 10 names for a whale character for a children's book for 3 to 8 years old.
+Names should be unique and easy to remember.
 
 ----------
 🖥️ GPT-4:
@@ -58,18 +59,27 @@ Next, I needed the story. And because we have this amazing tool called GPT-4, wh
 
 🔍 <ins>Prompt engineering<ins>
 
-```
+```txt
 ----------
 🔍 PROMPT:
 ----------
 
-I want you to become my prompt engineer. Your goal is to help me craft the best possible prompt for my needs. This prompt will be used by you, ChatGPT. You will follow the following processes.
+I want you to become my prompt engineer. Your goal is to help me craft the best possible
+prompt for my needs. This prompt will be used by you, ChatGPT. You will follow the
+following processes.
 
-1. Your first response will ask me what the prompt should be about. I will provide my answer, but we will need to improve it through continual iterations by going through the next steps.
+1. Your first response will ask me what the prompt should be about.
+I will provide my answer, but we will need to improve it through continual
+iterations by going through the next steps.
 
-2. Based on my input, you will generate 2 sections. a) Revised prompt (provide your rewritten prompt. it should be clear, concise, and easily understood by you), b) Questions (ask any relevant questions pertaining to what additional information is needed from me to improve the prompt).
+2. Based on my input, you will generate 2 sections.
+a) Revised prompt (provide your rewritten prompt. it should be clear, concise,
+and easily understood by you),
+b) Questions (ask any relevant questions pertaining to what additional information
+is needed from me to improve the prompt).
 
-3. We will continue this iterative process with me providing additional information to you and you updating the prompt in the Revised prompt section until I say we are done.
+3. We will continue this iterative process with me providing additional information
+to you and you updating the prompt in the Revised prompt section until I say we are done.
 
 ----------
 🖥️ GPT-4:
@@ -83,7 +93,8 @@ Great, I would be happy to help you create the best possible prompt! So, let's g
 💬 MYSELF:
 ----------
 
-Write me a children's book that rhymes about a whale named Luna that learns about emotions.
+Write me a children's book that rhymes about a whale named Luna that learns
+about emotions.
 
 ----------
 🖥️ GPT-4:
@@ -92,14 +103,17 @@ Write me a children's book that rhymes about a whale named Luna that learns abou
 Great prompt! Based on your input, here's what I came up with:
 
 Revised Prompt:
-Write a children's book in rhyming verse about a friendly whale named Luna who discovers and learns to understand emotions.
+Write a children's book in rhyming verse about a friendly whale named Luna who
+discovers and learns to understand emotions.
 
 Questions:
 
 1. What age group is the book aimed at?
 2. What kind of emotions would you like Luna to learn about?
-3. Do you have a preferred tone for the book (e.g. light-hearted, educational, inspiring, etc.)?
-4. Would you like any specific lessons or messages to be conveyed through the story?
+3. Do you have a preferred tone for the book (e.g. light-hearted, educational,
+inspiring, etc.)?
+4. Would you like any specific lessons or messages to be conveyed through
+the story?
 
 ----------
 💬 MYSELF:
@@ -108,13 +122,18 @@ Questions:
 1. From 3 to 8 years old
 2. Happiness, sadness, fear, anger, disgust and surprise
 3. Light-hearted, educational and inspiring
-4. How to turn negative emotions into positives emotions and how to embrace all emotions
+4. How to turn negative emotions into positives emotions and how to
+embrace all emotions
 
 ----------
 🖥️ GPT-4:
 ----------
 
-Write a light-hearted, educational, and inspiring children's book in rhyming verse about a friendly whale named Luna. Luna goes on a journey to discover and learn about different emotions, such as happiness, sadness, fear, anger, disgust and empathy. Along the way, Luna learns how to embrace and understand all emotions and how to turn negative emotions into positive ones.
+Write a light-hearted, educational, and inspiring children's book in rhyming verse about
+a friendly whale named Luna. Luna goes on a journey to discover and learn about different
+emotions, such as happiness, sadness, fear, anger, disgust and empathy. Along the way,
+Luna learns how to embrace and understand all emotions and how to turn negative emotions
+into positive ones.
 
 Questions:
 
@@ -124,16 +143,23 @@ Questions:
 4. Is there a particular illustration style or aesthetic you have in mind for the book?
 ```
 
-With this iterative process I went back and forth with GPT-4 until it managed to ask enough questions to narrow down and fine-tune my prompt to perfection, which was eventually fed back into GPT-4 to produce the copy for my book.
+With this iterative process I went back and forth with GPT-4 until it managed to ask enough
+questions to narrow down and fine-tune my prompt to perfection, which was eventually
+fed back into GPT-4 to produce the copy for my book.
 
 🔍 <ins>Prompt for writing the book<ins>
 
-```
+```txt
 ----------
 🔍 PROMPT:
 ----------
 
-Write a light-hearted, educational, and inspiring children's book in rhyming verse about a friendly whale named Luna. Luna goes on a journey in the ocean to discover and learn about different emotions, such as happiness, sadness, fear, anger, disgust and surprise. Along the way, Luna learns how to embrace and understand all emotions and how to turn negative emotions into positive ones. The book should be 10 to 15 pages in length and should use simplified language. The title of the book is "Luna: A Journey of Emotions".
+Write a light-hearted, educational, and inspiring children's book in rhyming verse about
+a friendly whale named Luna. Luna goes on a journey in the ocean to discover and learn
+about different emotions, such as happiness, sadness, fear, anger, disgust and surprise.
+Along the way, Luna learns how to embrace and understand all emotions and how to turn
+negative emotions into positive ones. The book should be 10 to 15 pages in length and
+should use simplified language. The title of the book is "Luna: A Journey of Emotions".
 
 ----------
 🖥️ GPT-4:
@@ -218,12 +244,15 @@ For everything Midjourney, I've used only version v5. If you are unsure about so
 
 For starters, I needed a visual for my main character. I wasn't sure what I wanted, what style direction to use, etc., so I started with something basic.
 
-```
+```txt
 ----------
 🔍 PROMPT:
 ----------
 
-/imagine A playful blue whale character suitable for a children's book aimed at 3-8 year olds. The character should be depicted in an underwater scene. The illustration should be fitting for a children's book and use bright, cheerful colours. --v 5
+/imagine A playful blue whale character suitable for a children's book aimed at
+3-8 year olds. The character should be depicted in an underwater scene. The
+illustration should be fitting for a children's book and use bright,
+cheerful colours. --v 5
 ```
 
 ![First variations of the main character](https://raw.githubusercontent.com/AdrianApan/personal-site/master/public/assets/blog/posts/gpt_midjourney_book_1.png)
@@ -234,18 +263,20 @@ Browsing the top and trending images for a few minutes, I came across [this imag
 
 After consulting the Midjourney documentation, I came across what quickly became the breaking point in generating the visuals for the book:
 
-```
+```txt
 /imagine <IMAGE_URL> prompt as usual
 ```
 
 With this `<IMAGE_URL>` option, you can feed an image into your request, and your prompt will use that as the base image. I went back to Midjourney and fed it this prompt:
 
-```
+```txt
 ----------
 🔍 PROMPT:
 ----------
 
-/imagine <https://s.mj.run/1c5XBrr7-so> a playful blue whale character suitable for a children's book aimed at 3-8 year olds. The character should embody curiosity and wonder and be depicted in an underwater scene. --v 5
+/imagine <https://s.mj.run/1c5XBrr7-so> a playful blue whale character suitable for
+a children's book aimed at 3-8 year olds. The character should embody curiosity and
+wonder and be depicted in an underwater scene. --v 5
 ```
 
 ![Second variations of the main character](https://raw.githubusercontent.com/AdrianApan/personal-site/master/public/assets/blog/posts/gpt_midjourney_book_2.png)
@@ -262,12 +293,15 @@ After a few more variations, I ended up with something I liked and settled on - 
 
 From this point on, I needed a few more characters to match the storyline and emotions, such as a happy dolphin, a frightened fish, an angry crab, etc. The process was similar for all, as I already had a winning formula: use a base image, adjust the prompt to describe the emotions/expression I wanted the character to have, and create variations until it generates something I like and that fits.
 
-```
+```txt
 ----------
 🔍 PROMPT:
 ----------
 
-/imagine <BASE_IMAGE> a EMOTION_HERE ANIMAL_HERE character suitable for a children's book aimed at 3-8 year olds. The character should embody EMOTION_HERE and EMOTION_HERE and it should be depicted in an underwater scene. --v 5
+/imagine <BASE_IMAGE> a EMOTION_HERE ANIMAL_HERE character suitable for a
+children's book aimed at 3-8 year olds. The character should embody
+EMOTION_HERE and EMOTION_HERE and it should be depicted in an underwater
+scene. --v 5
 ```
 
 - **BASE_IMAGE**: either the [orignal art style image](https://cdn.midjourney.com/b38e4652-e0af-4e3a-bff7-3694b9cfa090/0_3.png) or my new [main character](https://media.discordapp.net/attachments/1093278982042034216/1093473584019677234/Hephe_a_playful_blue_whale_character_suitable_for_a_childrens_b_219ef48d-9bd0-4c59-80d8-8bee43dde043.png?width=1124&height=1124)
@@ -277,12 +311,14 @@ From this point on, I needed a few more characters to match the storyline and em
 
 🔍 <ins>Example prompt for my seal character<ins>
 
-```
+```txt
 ----------
 🔍 PROMPT:
 ----------
 
-/imagine <https://s.mj.run/d2rV0DybYs4> a sad seal character suitable for a children's book aimed at 3-8 year olds. The character should embody sadness and be tearful and it should be depicted in an underwater scene.
+/imagine <https://s.mj.run/d2rV0DybYs4> a sad seal character suitable for a
+children's book aimed at 3-8 year olds. The character should embody sadness
+and be tearful and it should be depicted in an underwater scene.
 ```
 
 ---
@@ -293,7 +329,7 @@ From this point on, I needed a few more characters to match the storyline and em
 
 The aim was to have a paperback version (8.5 x 8.5 inches), which I found to be the most common size for children's books. The images generated by Midjourney are squares as well (1024 x 1024 pixels), so this played into it nicely.
 
-My goal was to have text on the left page and the visual on the right page.
+My goal was to have txt on the left page and the visual on the right page.
 
 ![Page arrangement](https://raw.githubusercontent.com/AdrianApan/personal-site/master/public/assets/blog/posts/gpt_midjourney_book_5.png)
 
@@ -305,7 +341,7 @@ As for the eBook/Kindle version, I merged the left and right pages, as these are
 
 ![eBook version](https://raw.githubusercontent.com/AdrianApan/personal-site/master/public/assets/blog/posts/gpt_midjourney_book_7.png)
 
-To achieve a consistent feeling, I didn't want to have just a simple solid colour on the left-hand side pages where the texts are placed. In my head, the pages should come together in one cohesive landscape image. To achieve an extended background which I could use as a background on the pages where the text is placed, I opted for an age-old feature from Adobe Photoshop called "Content Aware Fill". You can read more about this PS feature here: [https://helpx.adobe.com/uk/photoshop/using/content-aware-fill.html](https://helpx.adobe.com/uk/photoshop/using/content-aware-fill.html)
+To achieve a consistent feeling, I didn't want to have just a simple solid colour on the left-hand side pages where the txts are placed. In my head, the pages should come together in one cohesive landscape image. To achieve an extended background which I could use as a background on the pages where the txt is placed, I opted for an age-old feature from Adobe Photoshop called "Content Aware Fill". You can read more about this PS feature here: [https://helpx.adobe.com/uk/photoshop/using/content-aware-fill.html](https://helpx.adobe.com/uk/photoshop/using/content-aware-fill.html)
 
 With this powerful but straightforward feature, I was able to unify the left-hand side and right-hand side pages and also extend the cover page of the eBook version.
 
@@ -321,8 +357,17 @@ I ended up publishing the book exclusively on Amazon using Amazon's KDP. It was 
 
 ### 💬 Final thoughts
 
-It took me 2 days from inception until publication to deliver this pet project and, while it definitely had its ups and downs, it was a refreshing break from my usual (mostly purely code-based) projects. I definitely enjoyed putting GPT-4 and Midjourney to work in a real-world project.
+It took me two days from inception until publication to deliver this pet project and, while it definitely had its ups and downs, it was a refreshing break from my usual (mostly purely code-based) projects. I definitely enjoyed putting GPT-4 and Midjourney to work in a real-world project.
 
-I used GPT-4 for other bits as well, such as filler copy in the book (outro, back of the book), proofreading, and writing the product description on Amazon.
+I used GPT-4 for other bits as well, such as filler copy in the book (outro, back of the book), proofreading, font suggestions and writing the product description on Amazon.
 
-As a parting fun fact: you might have noticed the author is "Nata Pows", which is an anagram for "Two Apans" (crediting the 2 authors of the book: myself and my amazing wife who helped me along the way).
+Finally, a parting fun fact: you might have noticed the author is "Nata Pows", which is an anagram for "Two Apans", crediting the two authors of the book: myself and my amazing wife who helped me along the way.
+
+---
+
+### 🔗 Useful links
+
+- ["Luna: A Journey of Emotion" (eBook & paperback on Amazon)](https://www.amazon.co.uk/Luna-journey-emotions-Nata-Pows/dp/B0C1JK6KH7)
+- [GPT-4](https://openai.com/product/gpt-4)
+- [Midjourney](https://www.midjourney.com/)
+- [Adobe Photoshop "Content Aware Fill"](https://helpx.adobe.com/uk/photoshop/using/content-aware-fill.html)
