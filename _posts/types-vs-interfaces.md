@@ -1,8 +1,7 @@
 ---
 title: 'Typescript: Types vs Interfaces'
 excerpt: 'Types and Interfaces are very similar and most often you could use any of them in your code and it would work just fine. The key distinction is that a type cannot be re-opened to add new properties to it compared to an interface which is always extendable.'
-icon: 'book'
-date: '2021-05-02T10:27:55+0000'
+date: '2021-05-02'
 ---
 
 Types and Interfaces are very similar and most often you could use any of them in your code and it would work just fine. The key distinction is that a type cannot be re-opened to add new properties vs an interface which is always extendable. Let's dive into a quick example.

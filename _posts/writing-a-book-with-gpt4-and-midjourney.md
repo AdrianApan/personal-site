@@ -1,8 +1,7 @@
 ---
 title: 'Writing a book with GPT-4 and Midjourney'
 excerpt: "A write-up on how I've created a children's book with GPT-4 and Midjourney and published it through Amazon KDP."
-icon: 'book'
-date: '2023-04-13T00:13:37+0000'
+date: '2023-04-13'
 ---
 
 ### 🌱 The idea
@@ -23,7 +22,7 @@ If you are eager to see the end result, you can purchase the book on Amazon (bot
 
 To kickstart things, I needed a name for the main character - a perfect first task to fire up the GPT-4 prompt engineering engines.
 
-🔍 <ins>Finding a name for the main character<ins>
+🔍 **Finding a name for the main character**
 
 ```txt
 ----------
@@ -57,7 +56,7 @@ Out of these suggestions, I went with "Luna" as the main character's name.
 
 Next, I needed the story. And because we have this amazing tool called GPT-4, why not let it write the prompts for us? I used the following prompt to fine-tune my GPT-4 prompts going forward.
 
-🔍 <ins>Prompt engineering<ins>
+🔍 **Prompt engineering**
 
 ```txt
 ----------
@@ -147,7 +146,7 @@ With this iterative process I went back and forth with GPT-4 until it managed to
 questions to narrow down and fine-tune my prompt to perfection, which was eventually
 fed back into GPT-4 to produce the copy for my book.
 
-🔍 <ins>Prompt for writing the book<ins>
+🔍 **Prompt for writing the book**
 
 ```txt
 ----------
@@ -309,7 +308,7 @@ scene. --v 5
 * **EMOTION**: the state/emotion of the character (example: sad, happy, scared, angry etc.)
 * **ANIMAL**: animals/characters appearing in the book (dolphin, crab, fish, etc.)
 
-🔍 <ins>Example prompt for my seal character<ins>
+🔍 **Example prompt for my seal character**
 
 ```txt
 ----------

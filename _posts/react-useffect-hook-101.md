@@ -1,8 +1,7 @@
 ---
 title: 'React useEffect hook 101'
 excerpt: 'The Effect Hook, or shorly useEffect(), lets you perform side effects in a React functional component. Dealing with fetch requests, looking to manipulating the DOM directly or maybe trying to make use of a timer function? This is where useEffect is your go-to choice.'
-icon: 'book'
-date: '2021-05-13T19:04:00+0000'
+date: '2021-05-13'
 ---
 
 ### 🌱 Introduction

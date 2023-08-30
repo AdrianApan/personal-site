@@ -1,8 +1,7 @@
 ---
 title: 'How to use React Testing Library to test a modern React application'
 excerpt: 'Learn how to set up and test a production ready React application built with Redux, React hooks, routing and custom hooks; by making use of React Testing Library and Jest.'
-icon: 'book'
-date: '2021-11-15T06:14:05+0000'
+date: '2021-11-15'
 ---
 
 ### 🌱 Introduction
@@ -57,8 +56,7 @@ interface ExtendedRenderOptions extends RenderOptions {
 
 const TestWrapper =
   (store: Store) =>
-  ({ children }: { children?: React.ReactNode }) =>
-    <Provider store={store}>{children}</Provider>
+  ({ children }: { children?: React.ReactNode }) => <Provider store={store}>{children}</Provider>
 
 const render = (
   component: React.ReactElement,
@@ -70,7 +68,7 @@ const render = (
     initialState: {
       // can add default state here if need be
     },
-  }
+  },
 ) => {
   return rtlRender(component, {
     wrapper: TestWrapper(store),
@@ -224,9 +222,7 @@ describe('User component', () => {
   })
 
   it('Should render the component with the mock data', async () => {
-    expect(
-      await screen.findByText(mockState.user.details.name)
-    ).toBeInTheDocument()
+    expect(await screen.findByText(mockState.user.details.name)).toBeInTheDocument()
   })
 
   it('Should hide the user details on initial render', async () => {
@@ -249,7 +245,7 @@ describe('User component', () => {
     test.each(displayedFields)('Should show a %p field', async (fieldName) => {
       expect(
         // @ts-ignore
-        await screen.findByText(mockState.user.details[fieldName])
+        await screen.findByText(mockState.user.details[fieldName]),
       ).toBeInTheDocument()
     })
   })
@@ -282,9 +278,7 @@ describe('User component', () => {
           user: { ...mockState.user, isLoading: false, isError: true },
         },
       })
-      expect(
-        await screen.findByText('Something went wrong. Please try again.')
-      ).toBeTruthy()
+      expect(await screen.findByText('Something went wrong. Please try again.')).toBeTruthy()
     })
   })
 })
