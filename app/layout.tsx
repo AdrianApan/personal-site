@@ -1,6 +1,7 @@
 import { Poppins } from 'next/font/google'
 import { Metadata } from 'next'
 import Script from 'next/script'
+import { Analytics } from '@vercel/analytics/react'
 
 import '@/styles/globals.css'
 import ThemeProvider from '@/context/ThemeProvider'
@@ -28,6 +29,7 @@ export default function RootLayout({ children }: Props) {
     <html lang="en" className={poppins.className}>
       <body>
         <ThemeProvider>{children}</ThemeProvider>
+        <Analytics />
       </body>
       <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`} />
       <Script id="google-analytics">
