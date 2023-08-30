@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "rm -rf ./_static/* && npx next build",
-    "start": "npx serve _static",
+    "build": "next build",
+    "start": "next start -H 0.0.0.0 -p ${PORT:-8080}",
     "lint": "next lint"
   },
   "dependencies": {
