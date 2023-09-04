@@ -4,8 +4,8 @@ import useWordRevealAnimation from '@/hooks/useWordRevealAnimation'
 
 const HomeHero = () => {
   const animatedContent = useWordRevealAnimation(
-    'I am a product engineer who enjoys crafting high-quality experiences through creative engineering.',
-    ['product', 'engineer'],
+    'I am a software engineer who enjoys crafting high-quality experiences through creative engineering.',
+    ['software', 'engineer'],
   )
 
   return (
