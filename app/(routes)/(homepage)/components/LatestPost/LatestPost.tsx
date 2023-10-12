@@ -1,5 +1,6 @@
 'use client'
 
+import Link from 'next/link'
 import { motion } from 'framer-motion'
 
 import Post from '@/types/Post'
@@ -11,11 +12,11 @@ interface Props {
 }
 
 const LatestPost = ({ post }: Props) => (
-  <section className="w-full py-8">
+  <section className="w-full py-2">
     <div className="max-w-screen-lg px-8 py-6 mx-auto">
       <div className="mb-12 md:mb-8">
         <h2 className="text-3xl font-medium md:text-4xl text-black dark:text-white leading-10 md:leading-12">
-          Latest blog post
+          Latest from the Blog
         </h2>
         <motion.h3
           className="text-md font-normal md:text-lg text-gray-400 dark:text-zinc-500"
@@ -24,7 +25,13 @@ const LatestPost = ({ post }: Props) => (
           whileInView="visible"
           viewport={{ once: true }}
         >
-          To view all articles, visit the Blog section
+          For more articles{' '}
+          <Link
+            href="/blog"
+            className="inline-flex space-x-1 items-center mx-auto text-primary hover:opacity-80"
+          >
+            visit the Blog section
+          </Link>
         </motion.h3>
       </div>
 

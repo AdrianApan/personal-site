@@ -5,14 +5,16 @@ export const subtitleVariants: Variants = {
     opacity: 0,
     y: 30,
   },
-  visible: {
+  visible: (i = 1) => ({
     opacity: 1,
     y: 0,
     transition: {
+      staggerChildren: 0.12,
+      delayChildren: 0.25 * i,
       duration: 0.5,
       type: 'easeInOut',
     },
-  },
+  }),
 }
 
 export const articleVariants: Variants = {
