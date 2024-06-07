@@ -87,6 +87,15 @@ const Projects = () => (
           <p className="font-light">
             Launching fully-fledged monetised products, such as{' '}
             <Link
+              href="https://role.so/"
+              rel="noopener noreferrer"
+              target="_blank"
+              className="inline-flex space-x-1 items-center mx-auto border-b border-dashed border-gray-300 dark:border-slate-600 hover:border-primary hover:dark:border-primary hover:text-primary leading-6"
+            >
+              Role.so
+            </Link>{' '}
+            and{' '}
+            <Link
               href="https://www.censtats.com/"
               rel="noopener noreferrer"
               target="_blank"
